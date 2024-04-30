@@ -8,18 +8,17 @@ JavaScript is a powerful programming language widely used for web development. U
 
 ## Folder Structure
 
-The repository is organized into folders, each representing a different question from the challenge. Within each folder, you'll find the JavaScript file containing the solution to the respective question along with any necessary resources or additional information related to the topic.
-
+The challenge is organized into folders, each representing a different question from the challenge. Within each folder, you'll find the JavaScript file containing the solution to the respective question along with any necessary resources or additional information related to the topic.
 
 ## How to Use
 
 To get started with the challenge, follow these steps:
 
 1. Navigate to the folder corresponding to the question you want to tackle.
-2. Open the `solution.js` file using your preferred code editor.
+2. Open the `README.md` file using your preferred code editor.
 3. Read the description of the problem and implement your solution in the provided JavaScript file.
 4. Test your solution by running the file in a JavaScript runtime environment or browser console.
-5. Check the `README.md` file for additional explanations, hints, or resources related to the problem.
+5. Check the `solution.js` file for additional explanations, hints, or resources related to the problem.
 
 Feel free to experiment with the code, modify the solutions, and explore alternative approaches to solving the challenges. The goal is to deepen your understanding of JavaScript concepts and improve your problem-solving skills.
 
