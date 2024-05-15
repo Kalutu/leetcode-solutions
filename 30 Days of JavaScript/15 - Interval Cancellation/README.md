@@ -63,7 +63,7 @@ Every 30ms, fn(2, 5) is called. Until t=165ms, then it is cancelled.
 6th fn call is at 150ms
 Cancelled at 165ms
 
-### ### Example 3:
+### Example 3:
 
 Input: fn = (x1, x2, x3) => (x1 + x2 + x3), args = [5, 1, 3], t = 50
 Output:
