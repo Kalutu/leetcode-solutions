@@ -26,6 +26,7 @@ calls = [
 {"t": 50, inputs: [1]},
 {"t": 75, inputs: [2]}
 ]
+
 Output: [{"t": 125, inputs: [2]}]
 
 #### Explanation:
@@ -49,6 +50,7 @@ calls = [
 {"t": 50, inputs: [1]},
 {"t": 100, inputs: [2]}
 ]
+
 Output: [{"t": 70, inputs: [1]}, {"t": 120, inputs: [2]}]
 
 #### Explanation:
