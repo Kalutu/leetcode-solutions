@@ -51,5 +51,5 @@ There are no elements to be chunked so an empty array is returned.
 ### Constraints:
 
 - arr is a valid JSON array
-- 2 <= JSON.stringify(arr).length <= 105
+- 2 <= JSON.stringify(arr).length <= 10<sup>5</sup>
 - 1 <= size <= arr.length + 1
