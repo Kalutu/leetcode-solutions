@@ -23,9 +23,13 @@ Output: [[],["emitted",[]],["subscribed"],["subscribed"],["emitted",[5,6]]]
 #### Explanation:
 
 const emitter = new EventEmitter();
+
 emitter.emit("firstEvent"); // [], no callback are subscribed yet
+
 emitter.subscribe("firstEvent", function cb1() { return 5; });
+
 emitter.subscribe("firstEvent", function cb2() { return 6; });
+
 emitter.emit("firstEvent"); // [5, 6], returns the output of cb1 and cb2
 
 ### Example 2:
@@ -41,8 +45,11 @@ Output: [[],["subscribed"],["emitted",["1,2,3"]],["emitted",["3,4,6"]]]
 Note that the emit method should be able to accept an OPTIONAL array of arguments.
 
 const emitter = new EventEmitter();
+
 emitter.subscribe("firstEvent, function cb1(...args) { return args.join(','); });
+
 emitter.emit("firstEvent", [1, 2, 3]); // ["1,2,3"]
+
 emitter.emit("firstEvent", [3, 4, 6]); // ["3,4,6"]
 
 ### Example 3:
@@ -56,9 +63,13 @@ Output: [[],["subscribed"],["emitted",["1,2,3"]],["unsubscribed",0],["emitted",[
 #### Explanation:
 
 const emitter = new EventEmitter();
+
 const sub = emitter.subscribe("firstEvent", (...args) => args.join(','));
+
 emitter.emit("firstEvent", [1, 2, 3]); // ["1,2,3"]
+
 sub.unsubscribe(); // undefined
+
 emitter.emit("firstEvent", [4, 5, 6]); // [], there are no subscriptions
 
 ### Example 4:
@@ -72,9 +83,13 @@ Output: [[],["subscribed"],["emitted",["1,2,3"]],["unsubscribed",0],["emitted",[
 #### Explanation:
 
 const emitter = new EventEmitter();
+
 const sub1 = emitter.subscribe("firstEvent", x => x + 1);
+
 const sub2 = emitter.subscribe("firstEvent", x => x + 2);
+
 sub1.unsubscribe(); // undefined
+
 emitter.emit("firstEvent", [5]); // [7]
 
 ### Constraints:
